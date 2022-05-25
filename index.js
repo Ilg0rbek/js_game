@@ -63,11 +63,14 @@ next()
 
 const check = (selectedAnswer) => {
 
-    if (!(selectedAnswer ^ !isTrue)) {
+    if (selectedAnswer && trueAnswer === answer) {
         count++;
+        chance += 3
         score.innerHTML = count
+        let w = (100 / maxChance) * chance;
+        line.style.width = `${w}%`
     } else {
-        chance--;
+        chance -= 3;
         let w = (100 / maxChance) * chance;
         line.style.width = `${w}%`
 

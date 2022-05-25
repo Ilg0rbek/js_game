@@ -45,4 +45,9 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+.score {
+  position: relative;
+  z-index: 1000;
+}
 /*# sourceMappingURL=main.css.map */
